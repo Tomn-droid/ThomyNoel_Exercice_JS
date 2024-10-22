@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice JS Html</title>
+</head>
+<body>
+
+    <div class="bloc">
+        <label for=""></label><input id="contenu" type="text">
+        <button id="btn">OK</button>
+    </div>
+
+    <script>
+
+       
+        function clique(){
+            let text = document.getElementById("contenu").value;
+        
+            document.getElementById("btn").innerHTML = text
+        }    
+        document.getElementById("btn").addEventListener("click", clique);  
+    </script>
+</body>
+</html>
